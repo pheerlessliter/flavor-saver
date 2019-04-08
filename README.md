@@ -8,6 +8,6 @@ Generic Docker containers for doing a given task with a certain repo
 
 ## Murder file
 ### Use at your own risk to delete any existing docker containers
- - Close this repo
+ - Clone this repo
  - Copy the murder file into either /usr/bin/ or /usr/local/bin/
  - Run the command `murder` with sudo or root privs
