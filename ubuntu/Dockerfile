@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
 RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get -y install iputils-ping
+RUN apt-get -y install systemd
 
-ENTRYPOINT ping localhost
+ENTRYPOINT journalctl -f
