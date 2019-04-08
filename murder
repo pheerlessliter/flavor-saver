@@ -1,0 +1,8 @@
+#!/bin/bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi -f $(docker images -q)
+docker rm -v $(docker volume ls -q)
+docker system prune -f
+docker volume prune -f
+docker network prune -f
